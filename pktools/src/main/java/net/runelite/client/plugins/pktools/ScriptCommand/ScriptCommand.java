@@ -214,7 +214,9 @@ class FireSurgeCommand implements ScriptCommand {
         try {
             int boosted_level = client.getBoostedSkillLevel(Skill.MAGIC);
 
-            if (boosted_level >= 95) {
+            if (boosted_level >= 75 && boosted_level < 95) {
+                clickSpell(WidgetInfo.SPELL_FIRE_WAVE, client, plugin);
+            } else {
                 clickSpell(WidgetInfo.SPELL_FIRE_SURGE, client, plugin);
             }
         } catch (Exception e) {
