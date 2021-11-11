@@ -1,6 +1,6 @@
-version = "1.2.01"
+version = "1.2.0"
 
-project.extra["PluginName"] = "RaniTools"
+project.extra["PluginName"] = "PKingTools"
 project.extra["PluginDescription"] = "Arsenal of PKing Tools"
 
 tasks {
